@@ -10,7 +10,7 @@ A brutalist, single-serving website that answers one question: **"Should I go ou
 - Pure HTML/CSS/JS
 
 ### Live Site
-[https://https://msveiti.github.io/wind-check/](https://https://msveiti.github.io/wind-check/)
+[https://https://msveiti.github.io/wind-check/](https://msveiti.github.io/wind-check/)
 
 ### Why?
 Because wind speed is the most underrated factor in whether a walk or bike ride is enjoyable. Most weather apps hide it behind icons. This puts it front and center.
