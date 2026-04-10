@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Wind Check · Should I go outside?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-card">
+            <div class="location-display" id="locationName">Detecting location...</div>
+            <div class="verdict" id="verdict">—</div>
+            <div class="details" id="details"></div>
+            
+            <!-- Compass Arrow -->
+            <div class="compass-container">
+                <svg class="compass-arrow" id="compassArrow" width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Main arrow pointing up (North) -->
+                    <path d="M12 2L12 22M12 2L16 6M12 2L8 6" stroke="#8ba38b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- Compass circle -->
+                    <circle cx="12" cy="12" r="10" stroke="#3a4a3a" stroke-width="1" fill="none"/>
+                    <!-- North label -->
+                    <text x="12" y="5" text-anchor="middle" fill="#8ba38b" font-size="4" font-family="Courier, monospace" font-weight="bold">N</text>
+                    <!-- South label -->
+                    <text x="12" y="20.5" text-anchor="middle" fill="#5a6a5a" font-size="3" font-family="Courier, monospace">S</text>
+                    <!-- East label -->
+                    <text x="21" y="13" text-anchor="middle" fill="#5a6a5a" font-size="3" font-family="Courier, monospace">E</text>
+                    <!-- West label -->
+                    <text x="3" y="13" text-anchor="middle" fill="#5a6a5a" font-size="3" font-family="Courier, monospace">W</text>
+                </svg>
+            </div>
+            
+            <div class="refresh-hint">↻ Data updates automatically</div>
+        </div>
+        
+        <div class="footer-controls">
+            <button id="refreshBtn" class="btn">Check Again</button>
+            <button id="shareBtn" class="btn">📋 Copy Status</button>
+            <span class="divider">|</span>
+            <span class="small-note">Powered by Open-Meteo · No ads</span>
+        </div>
+    </div>
+    
+    <!-- Hidden elements for error and loading states -->
+    <div id="error-message" class="error-message hidden"></div>
+    <div id="loading-spinner" class="loading-spinner hidden"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
